@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Exercise Front End </title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+      .title-testimonial
+      {
+            
+            font-size: 40px;
+            font-weight: 600;
+            color: blue;
+            letter-spacing: 0.5px;
+      }
+      .arrow-card
+      {
+            background-color: blue;
+            opacity: 0.5;
+            height: 300px;
+      }
+
+      .card-testimonial{
+            background-color: white;
+            width: 70%;
+            border-left: 8px solid blue;
+            margin-left: 4%;
+            margin-right: 4%;
+            padding-right: 20px;
+      }
+
+      .massage
+      {
+            font-style: italic;
+            letter-spacing: 1px;
+      }
+
+      @media screen and (min-width: 769px) {
+    /* STYLES HERE */
+    .arrow-card
+      {
+            width: 90px;
+      }
+      
+      .image-arrow
+      {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 90px;
+            height: 300px;
+            opacity: 0.5;
+      }
+
+      @media screen and (min-width: 920px) {
+            .arrow-card
+      {
+            width: 120px;
+      }
+      
+      .image-arrow
+      {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 120px;
+            height: 300px;
+      }
+
+
+      }
+
+
+      .pct-1
+      {
+            background-image: url('./example1.png');
+      }
+      .pct-2
+      {
+            background-image: url('./example2.jpg');
+      }
+      .pct-3
+      {
+            background-image: url('./example3.jpg');
+      }
+
+      .card-testimonial-image
+      {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 300px;
+      }
+
+      body
+      {
+            background-color: #ececec;
+      }
+
+      .name
+      {
+            font-size: 20px;
+            font-weight: 700;
+      }
+
+      .title
+      {
+            font-size: 17px;
+      }
+}
+    </style>
+
+<body>
+      <div class="spacer" style="margin-top:100px"></div>
+      <div class="container col-10">
+            <section class="testimonial">
+                  <div class="title-testimonial">
+                        Client testimonial
+                  </div>
+                  <div class="spacer" style="margin-top:50px"></div>
+                  <div class="gallery-testimonial">
+                        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <div class="d-flex justify-content-around">
+                                          <div class="image-arrow pct-3"></div>
+                                          <div class="card-testimonial">
+                                                <div class="row">
+                                                      <div class="col-lg-4">
+                                                            <div class="card-testimonial-image pct-1"></div>
+                                                      </div>
+                                                      <div class="col-lg-8">
+                                                            <div class="spacer" style="margin-top: 20px;"></div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="blue" class="bi bi-quote" viewBox="0 0 16 16">
+                                                                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                                                                </svg>
+                                                                <div class="spacer" style="margin-top: 10px;"></div>
+                                                                <div class="massage">
+                                                                  Platform pembelajaran menyediakan pelatihan dan materi yang efektif
+                                                                </div>
+                                                                <div class="spacer" style="margin-top: 40px;"></div>
+                                                                <div class="name">
+                                                                  Muhammad Afifudin
+                                                                </div>
+                                                                <div class="title">
+                                                                  Senior Web Developer
+                                                                </div>
+
+                                                      </div>
+                                                </div>
+                                                
+                                          </div>
+                                          <div class="image-arrow pct-2"></div>
+                                    </div>
+                                    <div class="spacer" style="margin-top:50px"></div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="d-flex justify-content-around">
+                                          <div class="image-arrow pct-1"></div>
+                                          <div class="card-testimonial">
+                                                <div class="row">
+                                                      <div class="col-lg-4">
+                                                            <div class="card-testimonial-image pct-2"></div>
+                                                      </div>
+                                                      <div class="col-lg-8">
+                                                            <div class="spacer" style="margin-top: 20px;"></div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="blue" class="bi bi-quote" viewBox="0 0 16 16">
+                                                                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                                                                </svg>
+                                                                <div class="spacer" style="margin-top: 10px;"></div>
+                                                                <div class="massage">
+                                                                  Platform pembelajaran sangat membantu untuk meningkatkan skill dan kemampuan
+                                                                </div>
+                                                                <div class="spacer" style="margin-top: 40px;"></div>
+                                                                <div class="name">
+                                                                  Boughetti Rino
+                                                                </div>
+                                                                <div class="title">
+                                                                  Senior Racer
+                                                                </div>
+
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="image-arrow pct-3"></div>
+                                    </div>
+                                    <div class="spacer" style="margin-top:50px"></div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="d-flex justify-content-around">
+                                          <div class="image-arrow pct-2"></div>
+                                          <div class="card-testimonial">
+                                                <div class="row">
+                                                      <div class="col-lg-4">
+                                                            <div class="card-testimonial-image pct-3"></div>
+                                                      </div>
+                                                      <div class="col-lg-8">
+                                                            <div class="spacer" style="margin-top: 20px;"></div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="blue" class="bi bi-quote" viewBox="0 0 16 16">
+                                                                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                                                                </svg>
+                                                                <div class="spacer" style="margin-top: 10px;"></div>
+                                                                <div class="massage">
+                                                                  Media pembelajaran memudahkan saya memahami materi yang sulit
+                                                                </div>
+                                                                <div class="spacer" style="margin-top: 40px;"></div>
+                                                                <div class="name">
+                                                                        Cinta Kamilah
+                                                                </div>
+                                                                <div class="title">
+                                                                  Senior Aktris
+                                                                </div>
+
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="image-arrow pct-1"></div>
+                                    </div>
+                                    <div class="spacer" style="margin-top:50px"></div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev arrow-card" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                              </svg>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next arrow-card" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                        </svg>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+
+                  </div>
+      
+            </section>
+      </div>
+      
+      
+</body>
+</html>
